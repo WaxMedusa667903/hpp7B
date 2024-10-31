@@ -1,13 +1,13 @@
 // Unique identifier for each class
-const classId = '7B'; // Change this to '7B', '8A', '8B' as needed
+const classId = '7A'; // Change this to '7B', '8A', '8B' as needed
 
 // Initialize points from localStorage or set to 0 if not present
 const points = {
-    gryffindor: localStorage.getItem(`${classId}_gryffindor`) ? parseInt(localStorage.getItem(`${classId}_gryffindor`)) : 0,
-    slytherin: localStorage.getItem(`${classId}_slytherin`) ? parseInt(localStorage.getItem(`${classId}_slytherin`)) : 0,
-    ravenclaw: localStorage.getItem(`${classId}_ravenclaw`) ? parseInt(localStorage.getItem(`${classId}_ravenclaw`)) : 0,
-    hufflepuff: localStorage.getItem(`${classId}_hufflepuff`) ? parseInt(localStorage.getItem(`${classId}_hufflepuff`)) : 0,
-    hogwarts: localStorage.getItem(`${classId}_hogwarts`) ? parseInt(localStorage.getItem(`${classId}_hogwarts`)) : 0
+    gryffindor: localStorage.getItem(`${classId}_gryffindor`) !== null ? parseInt(localStorage.getItem(`${classId}_gryffindor`)) : 0,
+    slytherin: localStorage.getItem(`${classId}_slytherin`) !== null ? parseInt(localStorage.getItem(`${classId}_slytherin`)) : 0,
+    ravenclaw: localStorage.getItem(`${classId}_ravenclaw`) !== null ? parseInt(localStorage.getItem(`${classId}_ravenclaw`)) : 0,
+    hufflepuff: localStorage.getItem(`${classId}_hufflepuff`) !== null ? parseInt(localStorage.getItem(`${classId}_hufflepuff`)) : 0,
+    hogwarts: localStorage.getItem(`${classId}_hogwarts`) !== null ? parseInt(localStorage.getItem(`${classId}_hogwarts`)) : 0
 };
 
 // Array to cycle through for increment options
