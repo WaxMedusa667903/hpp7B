@@ -1,5 +1,5 @@
 // Unique identifier for each class
-const classId = '7A'; // Change this to '7B', '8A', '8B' as needed
+const classId = '7B'; // Change this to '7B', '8A', '8B' as needed
 
 // Initialize points from localStorage or set to 0 if not present
 const points = {
