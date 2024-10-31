@@ -3,11 +3,11 @@ const classId = '7A'; // Change this to '7B', '8A', '8B' as needed
 
 // Initialize points from localStorage or set to 0 if not present
 const points = {
-    gryffindor: localStorage.getItem(`${classId}_gryffindor`) !== null ? parseInt(localStorage.getItem(`${classId}_gryffindor`)) : 0,
-    slytherin: localStorage.getItem(`${classId}_slytherin`) !== null ? parseInt(localStorage.getItem(`${classId}_slytherin`)) : 0,
-    ravenclaw: localStorage.getItem(`${classId}_ravenclaw`) !== null ? parseInt(localStorage.getItem(`${classId}_ravenclaw`)) : 0,
-    hufflepuff: localStorage.getItem(`${classId}_hufflepuff`) !== null ? parseInt(localStorage.getItem(`${classId}_hufflepuff`)) : 0,
-    hogwarts: localStorage.getItem(`${classId}_hogwarts`) !== null ? parseInt(localStorage.getItem(`${classId}_hogwarts`)) : 0
+    gryffindor: parseInt(localStorage.getItem(`${classId}_gryffindor`)) || 0,
+    slytherin: parseInt(localStorage.getItem(`${classId}_slytherin`)) || 0,
+    ravenclaw: parseInt(localStorage.getItem(`${classId}_ravenclaw`)) || 0,
+    hufflepuff: parseInt(localStorage.getItem(`${classId}_hufflepuff`)) || 0,
+    hogwarts: parseInt(localStorage.getItem(`${classId}_hogwarts`)) || 0
 };
 
 // Array to cycle through for increment options
@@ -60,3 +60,4 @@ function capitalize(string) {
 // Call displayPoints to show the saved points when the page loads
 displayPoints();
 updateLeaderboard(); // Initialize the leaderboard on page load
+
