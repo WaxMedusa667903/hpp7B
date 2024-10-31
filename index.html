@@ -6,12 +6,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>7B Hogwarts House Points</title>
+    <title>Hogwarts House Points</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>7B Hogwarts House Points</h1>
+        <h1>7A Hogwarts House Points</h1>
     </header>
 
     <div class="houses">
@@ -20,9 +20,9 @@
             <img src="gryffindor-crest.png" alt="Gryffindor Crest" class="house-crest">
             <h2>Gryffindor</h2>
             <div class="points">
-                <button onclick="adjustPoints('gryffindor1', -currentIncrement)">-</button>
+                <button onclick="adjustPoints('gryffindor', -currentIncrement)">-</button>
                 <span id="gryffindor-points">0</span>
-                <button onclick="adjustPoints('gryffindor1', currentIncrement)">+</button>
+                <button onclick="adjustPoints('gryffindor', currentIncrement)">+</button>
             </div>
         </div>
 
@@ -31,9 +31,9 @@
             <img src="slytherin-crest.png" alt="Slytherin Crest" class="house-crest">
             <h2>Slytherin</h2>
             <div class="points">
-                <button onclick="adjustPoints('slytherin1', -currentIncrement)">-</button>
+                <button onclick="adjustPoints('slytherin', -currentIncrement)">-</button>
                 <span id="slytherin-points">0</span>
-                <button onclick="adjustPoints('slytherin1', currentIncrement)">+</button>
+                <button onclick="adjustPoints('slytherin', currentIncrement)">+</button>
             </div>
         </div>
 
@@ -42,9 +42,9 @@
             <img src="ravenclaw-crest.png" alt="Ravenclaw Crest" class="house-crest">
             <h2>Ravenclaw</h2>
             <div class="points">
-                <button onclick="adjustPoints('ravenclaw1', -currentIncrement)">-</button>
+                <button onclick="adjustPoints('ravenclaw', -currentIncrement)">-</button>
                 <span id="ravenclaw-points">0</span>
-                <button onclick="adjustPoints('ravenclaw1', currentIncrement)">+</button>
+                <button onclick="adjustPoints('ravenclaw', currentIncrement)">+</button>
             </div>
         </div>
 
@@ -53,9 +53,9 @@
             <img src="hufflepuff-crest.png" alt="Hufflepuff Crest" class="house-crest">
             <h2>Hufflepuff</h2>
             <div class="points">
-                <button onclick="adjustPoints('hufflepuff1', -currentIncrement)">-</button>
+                <button onclick="adjustPoints('hufflepuff', -currentIncrement)">-</button>
                 <span id="hufflepuff-points">0</span>
-                <button onclick="adjustPoints('hufflepuff1', currentIncrement)">+</button>
+                <button onclick="adjustPoints('hufflepuff', currentIncrement)">+</button>
             </div>
         </div>
 
@@ -64,9 +64,9 @@
             <img src="hogwarts-crest.png" alt="Hogwarts Crest" class="house-crest-hogwart">
             <h2>Hogwarts</h2>
             <div class="points">
-                <button onclick="adjustPoints('hogwarts1', -currentIncrement)">-</button>
+                <button onclick="adjustPoints('hogwarts', -currentIncrement)">-</button>
                 <span id="hogwarts-points">0</span>
-                <button onclick="adjustPoints('hogwarts1', currentIncrement)">+</button>
+                <button onclick="adjustPoints('hogwarts', currentIncrement)">+</button>
             </div>
         </div>
     </div>
